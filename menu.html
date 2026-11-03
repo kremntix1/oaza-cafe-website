@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — Oaza Cafe · أوزا كافيه</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="../index.html" class="logo"><span class="logo-mark"><i class="fas fa-mug-hot"></i></span> Oaza</a>
+      <div class="nav-links" id="navLinks">
+        <a href="../index.html">Home</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="reservation.html" class="btn btn-primary nav-cta">Visit Us</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Home</a> <i class="fas fa-chevron-right" style="font-size:0.6rem;"></i> Menu</div>
+      <h1>Our Menu</h1>
+      <p>Handcrafted drinks and fresh pastries, made with love every single day.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="tabs" id="menuTabs">
+        <button class="tab active" data-cat="all">All</button>
+        <button class="tab" data-cat="espresso">Espresso</button>
+        <button class="tab" data-cat="cold">Cold Brew</button>
+        <button class="tab" data-cat="specialty">Specialty</button>
+        <button class="tab" data-cat="pastry">Pastries</button>
+      </div>
+      <div class="menu-grid" id="fullMenuGrid"></div>
+    </div>
+  </section>
+
+  <!-- Cart button -->
+  <button id="cartBtn" style="position:fixed;bottom:24px;right:24px;width:60px;height:60px;border-radius:50%;background:var(--espresso);color:var(--cream);box-shadow:var(--shadow-lg);display:flex;align-items:center;justify-content:center;font-size:1.3rem;z-index:1500;">
+    <i class="fas fa-shopping-bag"></i>
+    <span class="cart-badge">0</span>
+  </button>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header"><h3>Your Order</h3><button id="closeCart" style="font-size:1.4rem;color:var(--muted);"><i class="fas fa-times"></i></button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Total</span><span id="cartTotal">$0.00</span></div>
+      <p style="font-size:0.8rem;color:var(--muted);text-align:center;margin-bottom:12px;">Order ahead — ready for pickup when you arrive. No delivery.</p>
+      <button class="btn btn-primary" style="width:100%;justify-content:center;">Order for Pickup</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+  <script src="../js/main.js"></script>
+  <a href="tel:0566332329" class="floating-call" aria-label="Call Oaza Cafe"><i class="fas fa-phone"></i></a>
+</body>
+</html>

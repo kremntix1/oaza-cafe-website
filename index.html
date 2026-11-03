@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oaza Cafe — أوزا كافيه | Riyadh</title>
+  <meta name="description" content="Oaza Cafe (أوزا كافيه) — specialty coffee in Riyadh. Open 24/7. Rated 4.5★ by 634+ guests. Visit us in Al-Sahafa." />
+  <meta name="keywords" content="Oaza Cafe, أوزا كافيه, coffee Riyadh, كافيه الرياض, specialty coffee Saudi Arabia" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-mark"><i class="fas fa-mug-hot"></i></span>
+        Oaza
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="pages/menu.html">Menu</a>
+        <a href="pages/about.html">About</a>
+        <a href="pages/gallery.html">Gallery</a>
+        <a href="pages/contact.html">Contact</a>
+        <a href="pages/reservation.html" class="btn btn-primary nav-cta">Visit Us</a>
+      </div>
+      <button id="cartBtn" style="position:relative;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,0.1);color:var(--cream);display:flex;align-items:center;justify-content:center;font-size:1.1rem;margin-left:8px;">
+        <i class="fas fa-shopping-bag"></i>
+        <span class="cart-badge">0</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="container">
+      <div class="hero-content">
+        <span class="eyebrow">أوزا كافيه · Oaza Cafe · Riyadh</span>
+        <h1>A modern <span class="accent">oasis</span> for coffee lovers.</h1>
+        <p>Open 24/7 in Al-Sahafa, Riyadh. Specialty coffee, signature drinks, and a calm modern space — rated 4.5★ by 634+ guests.</p>
+        <div class="hero-actions">
+          <a href="pages/menu.html" class="btn btn-primary"><i class="fas fa-mug-hot"></i> Explore Menu</a>
+          <a href="pages/about.html" class="btn btn-ghost"><i class="fas fa-play"></i> Our Story</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img src="https://images.pexels.com/photos/2396220/pexels-photo-2396220.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Aroma coffee cup" />
+    </div>
+    <div class="hero-stats">
+      <div class="container">
+        <div class="stat"><div class="stat-num">4.5</div><div class="stat-label">★ Rating</div></div>
+        <div class="stat"><div class="stat-num" data-count="634">0</div><div class="stat-label">Guest reviews</div></div>
+        <div class="stat"><div class="stat-num" data-count="24">0</div><div class="stat-label">/7 Open</div></div>
+        <div class="stat"><div class="stat-num" data-count="1">0</div><div class="stat-label">Location · Riyadh</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center mb-4">
+        <span class="eyebrow">Why Aroma</span>
+        <h2>Why guests love Oaza.</h2>
+        <p class="mt-2">A calm, modern space with quality coffee and warm hospitality — open around the clock.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature reveal">
+          <div class="feature-icon"><i class="fas fa-clock"></i></div>
+          <h4>Open 24/7</h4>
+          <p>Whenever the craving hits — morning, midnight, or in between — we're here for you.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="feature-icon"><i class="fas fa-mug-hot"></i></div>
+          <h4>Specialty Coffee</h4>
+          <p>Carefully selected beans, expertly brewed — from espresso to signature cold brews.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="feature-icon"><i class="fas fa-smile"></i></div>
+          <h4>Warm Hospitality</h4>
+          <p>Friendly, attentive service — guests praise our staff by name. You're always welcome.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="feature-icon"><i class="fas fa-wheelchair"></i></div>
+          <h4>Accessible</h4>
+          <p>Wheelchair-accessible entrance and seating. Comfortable for everyone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SIGNATURE MENU ============ -->
+  <section class="section" style="background: var(--cream);">
+    <div class="container">
+      <div class="text-center mb-4">
+        <span class="eyebrow">Our Menu</span>
+        <h2>Our Menu</h2>
+        <p class="mt-2">Specialty coffee, signature drinks, and fresh pastries.</p>
+      </div>
+      <div class="tabs" id="menuTabs">
+        <button class="tab active" data-cat="all">All</button>
+        <button class="tab" data-cat="espresso">Espresso</button>
+        <button class="tab" data-cat="cold">Cold Brew</button>
+        <button class="tab" data-cat="specialty">Specialty</button>
+        <button class="tab" data-cat="pastry">Pastries</button>
+      </div>
+      <div class="menu-grid" id="menuGrid"></div>
+      <div class="text-center mt-4">
+        <a href="pages/menu.html" class="btn btn-dark">View Full Menu <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT TEASER ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="grid" style="grid-template-columns: 1fr 1fr; align-items: center; gap: 60px;">
+        <div class="reveal-left">
+          <img src="https://images.pexels.com/photos/2467287/pexels-photo-2467287.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Coffee pouring" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);" />
+        </div>
+        <div class="reveal-right">
+          <span class="eyebrow">أوزا كافيه · Oaza Cafe</span>
+          <h2>A modern oasis in Al-Sahafa.</h2>
+          <p class="mt-3">Oaza Cafe is a calm, modern coffee spot in Riyadh's Al-Sahafa district — open 24 hours a day. Guests love the quality coffee, the quiet atmosphere, and the warm, attentive service.</p>
+          <p class="mt-2">Whether it's a morning espresso, a late-night cold brew, or a relaxed meet-up with friends — Oaza is your everyday oasis.</p>
+          <a href="https://instagram.com/oaza.ksa" target="_blank" class="btn btn-outline mt-3"><i class="fab fa-instagram"></i> Follow on Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section" style="background: var(--cream);">
+    <div class="container">
+      <div class="text-center mb-4">
+        <span class="eyebrow">Loved By</span>
+        <h2>What our guests say.</h2>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial reveal">
+          <div class="stars">★★★★★</div>
+          <div class="quote">"</div>
+          <p>مكان راقي ومحترم وانييق والخدمة رائعه..كل شي جودة ونظافه. عجبني ان الحمام نظيف وموفرين كل شي فيه.</p>
+          <div class="author">
+            <div class="avatar">NA</div>
+            <div><strong>نوره ايباد</strong><br><small style="color:var(--muted)">Local Guide · 7 reviews</small></div>
+          </div>
+        </div>
+        <div class="testimonial reveal">
+          <div class="stars">★★★★★</div>
+          <div class="quote">"</div>
+          <p>ما شاء الله، المكان جميل و هادئ ، المشروبات مرة حلوة و احسن خدمة عن طريق (شكيب)، مهذب و محترم.</p>
+          <div class="author">
+            <div class="avatar">ST</div>
+            <div><strong>Sherif El Tahan</strong><br><small style="color:var(--muted)">Local Guide · 18 reviews</small></div>
+          </div>
+        </div>
+        <div class="testimonial reveal">
+          <div class="stars">★★★★★</div>
+          <div class="quote">"</div>
+          <p>مكان ولا اروع للامنه وأجواء مزيج بين الكهوف والمودرن. تحياتي للإدارة وشكرا.</p>
+          <div class="author">
+            <div class="avatar">MM</div>
+            <div><strong>محمد منعم</strong><br><small style="color:var(--muted)">4 reviews · 7 photos</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY TEASER ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center mb-4">
+        <span class="eyebrow">Gallery</span>
+        <h2>Moments worth capturing.</h2>
+      </div>
+      <div class="gallery">
+        <div class="gallery-item wide"><img src="https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Coffee shop interior" /></div>
+        <div class="gallery-item"><img src="https://images.pexels.com/photos/1695052/pexels-photo-1695052.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Latte art" /></div>
+        <div class="gallery-item tall"><img src="https://images.pexels.com/photos/1410225/pexels-photo-1410225.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Coffee beans" /></div>
+        <div class="gallery-item"><img src="https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Iced coffee" /></div>
+        <div class="gallery-item"><img src="https://images.pexels.com/photos/1235706/pexels-photo-1235706.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Café counter" /></div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="pages/gallery.html" class="btn btn-dark">View Gallery <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER ============ -->
+  <section class="section" style="background: linear-gradient(135deg, var(--espresso), var(--coffee)); color: var(--cream);">
+    <div class="container text-center">
+      <span class="eyebrow" style="color: var(--gold-bright);">Stay in the loop</span>
+      <h2 style="color: var(--cream); margin: 16px 0;">Get 10% off your first order.</h2>
+      <p style="color: rgba(245,239,230,0.75); max-width: 500px; margin: 0 auto 32px;">Join our newsletter for new blends, events, and exclusive offers.</p>
+      <form class="flex gap-2 justify-center flex-wrap" onsubmit="event.preventDefault(); showToast('Thanks for subscribing! 🎉');">
+        <input type="email" class="form-control" placeholder="your@email.com" required style="max-width: 360px; border-radius: var(--radius-pill);" />
+        <button class="btn btn-primary" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo" style="margin-bottom: 16px;"><span class="logo-mark"><i class="fas fa-mug-hot"></i></span> Oaza</a>
+          <p>أوزا كافيه — A modern oasis for coffee lovers in Riyadh. Open 24/7.</p>
+          <div class="socials mt-3">
+            <a href="https://instagram.com/oaza.ksa" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="tel:0566332329"><i class="fas fa-phone"></i></a>
+            <a href="https://maps.google.com/?q=24.8058179,46.6384811" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="pages/menu.html">Menu</a>
+            <a href="pages/about.html">About</a>
+            <a href="pages/gallery.html">Gallery</a>
+          </div>
+        </div>
+        <div>
+          <h4>Visit</h4>
+          <div class="footer-links">
+            <a href="pages/contact.html">Contact</a>
+            <a href="pages/reservation.html">Reservations</a>
+            <a href="#">Careers</a>
+            <a href="#">Press</a>
+          </div>
+        </div>
+        <div>
+          <h4>Hours & Location</h4>
+          <p>Open 24/7 — every day</p>
+          <p class="mt-2"><i class="fas fa-map-marker-alt"></i> Mohammad bin Abdulaziz Aldughaither, Al-Sahafa, Riyadh 13321</p>
+          <p class="mt-2"><a href="tel:0566332329" style="color:var(--cream);"><i class="fas fa-phone"></i> 056 633 2329</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Oaza Cafe · أوزا كافيه. All rights reserved.</span>
+        <span>Made with <i class="fas fa-heart" style="color: var(--gold);"></i> and caffeine.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ CART DRAWER ============ -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3>Your Order</h3>
+      <button id="closeCart" style="font-size:1.4rem; color:var(--muted);"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Total</span><span id="cartTotal">$0.00</span></div>
+      <p style="font-size:0.8rem;color:var(--muted);text-align:center;margin-bottom:12px;">Order ahead — your drink will be ready when you arrive. No delivery.</p>
+      <button class="btn btn-primary" style="width:100%; justify-content:center;">Order for Pickup</button>
+    </div>
+  </aside>
+
+  <a href="tel:0566332329" class="floating-call" aria-label="Call Oaza Cafe"><i class="fas fa-phone"></i></a>
+  <div class="toast" id="toast"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
